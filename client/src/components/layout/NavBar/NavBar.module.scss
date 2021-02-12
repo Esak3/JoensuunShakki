@@ -1,0 +1,20 @@
+@import "../../../styles/variables";
+.navbarlist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: rgba($mainBrown, 0.6);
+}
+
+img {
+  height: 80%;
+  margin: 0 10px;
+}
+
+.menuIcon {
+  height: 70%;
+  cursor: pointer;
+}

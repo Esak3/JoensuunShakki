@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import NavBar from "./components/layout/NavBar"
 
-function App() {
+const App: FunctionComponent = () => {
   return (
     <div className="App">
+      <NavBar />
     </div>
   );
 }
