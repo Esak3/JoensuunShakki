@@ -1,0 +1,50 @@
+@import "../../../styles/variables";
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.mobileNavbarList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: rgba($mainBrown, 0.9);
+}
+
+.mobileIcon {
+  height: 80%;
+  margin: 0 15px;
+}
+
+.menuIcon {
+  height: 70%;
+  cursor: pointer;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  background-color: rgba($mainBrown, 0.9);
+
+  ul li {
+    padding: 10px;
+    list-style: none;
+    a {
+      border-bottom: 2px solid white;
+      text-decoration: none;
+      color: white;
+      padding: 5px;
+    }
+  }
+}
+
+.closedMenu {
+  height: 0;
+  visibility: hidden;
+}

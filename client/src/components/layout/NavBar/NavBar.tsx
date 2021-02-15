@@ -1,31 +1,50 @@
 import React, { FunctionComponent, useState, useEffect } from 'react'
-import styles from "./NavBar.module.scss";
+import { Link } from "react-router-dom";
+import "./NavBar.scss";
+
+import MobileNavBar from "./MobileNavBar";
+import DesktopNavBar from "./DesktopNavBar";
 
 const NavBar: FunctionComponent = () => {
+    
+    const screenWidth = useScreenWidth();
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [menuIcon, setMenuIcon] = useState("/hamburger2.svg");
+    const [hideMobileNav, setHideMobileNav] = useState(false);
+    const [hideDesktopNav, setHideDesktopNav] = useState(true);
     useEffect(() => {
-        if(isMenuOpen === true) {
-            setMenuIcon("/closed.svg");
+        if(screenWidth !== undefined && screenWidth < 720) {
+            setHideMobileNav(false);
+            setHideDesktopNav(true);
         } else {
-            setMenuIcon("/hamburger2.svg");
+            setHideMobileNav(true);
+            setHideDesktopNav(false);
         }
-    }, [isMenuOpen])
+    }, [screenWidth]);
 
     return (
-        <div className={styles.navbar}>
-            <div className="mobile">
-                <div className={styles.navbarList}>
-                <img src={process.env.PUBLIC_URL + "/logoV2.svg"} alt="logo" />
-                <img src={process.env.PUBLIC_URL + menuIcon} alt="menuIcon" className={styles.menuIcon} onClick={() => {
-                    setIsMenuOpen(!isMenuOpen);
-                }} />
-                </div>
-            </div>
-            <div className="tablet"> </div>
+        <div className="navbar">
+            { hideMobileNav ? null : <MobileNavBar /> }
+            { hideDesktopNav ? null : <DesktopNavBar />}
         </div>
     )
+}
+
+const useScreenWidth = () => {   
+    const [screenWidth, setScreenWidth] = useState<number>();
+
+    useEffect(() => {
+        const handleResize = () => {
+            setScreenWidth(window.innerWidth);
+        }
+
+        window.addEventListener("resize", handleResize);
+
+        handleResize();
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, [])
+
+    return screenWidth;
 }
 
 export default NavBar;
