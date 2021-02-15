@@ -12,10 +12,11 @@ const NavBar: FunctionComponent = () => {
             setMenuIcon("/hamburger2.svg");
         }
     }, [isMenuOpen])
+
     return (
-        <div className="navbar">
+        <div className={styles.navbar}>
             <div className="mobile">
-                <div className={styles.navbarlist}>
+                <div className={styles.navbarList}>
                 <img src={process.env.PUBLIC_URL + "/logoV2.svg"} alt="logo" />
                 <img src={process.env.PUBLIC_URL + menuIcon} alt="menuIcon" className={styles.menuIcon} onClick={() => {
                     setIsMenuOpen(!isMenuOpen);

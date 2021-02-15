@@ -1,10 +1,16 @@
 import React, { FunctionComponent } from 'react';
-import NavBar from "./components/layout/NavBar"
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
+import FrontPage from "./views/FrontPage/FrontPage";
 
 const App: FunctionComponent = () => {
   return (
     <div className="App">
-      <NavBar />
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" component={FrontPage}></Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

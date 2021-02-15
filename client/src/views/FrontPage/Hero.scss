@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+
+.heroImage {
+  background-image: url("./hero-jani-kaasinen-7VGzV09YnvA-unsplash.jpg");
+
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+
+  margin: -25px;
+}
+
+.heroText {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  background-color: rgba($mainBrown, 0.6);
+  padding: 30px 0;
+
+  transform: translate(0, -50%);
+
+  h1 {
+    font-weight: bold;
+  }
+}

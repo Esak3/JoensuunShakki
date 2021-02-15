@@ -1,5 +1,12 @@
 @import "../../../styles/variables";
-.navbarlist {
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.navbarList {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
