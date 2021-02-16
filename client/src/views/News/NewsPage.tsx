@@ -12,15 +12,20 @@ const NewsPage = () => {
         <div>
             <NavBar />
             <div className="main newsMain">
+            
                 <div className="content newsContent">
-                    {news.map((newsStory) => {
-                        return (
-                            <div className="newsCard">
-                                <img src={newsStory.image}></img>
-                                <Link>{newsStory.title}</Link>
-                            </div>
-                        );
-                    })}
+                <h1>Uutiset</h1>
+                    <div className="newsCards">
+                    
+                        {news.map((newsStory) => {
+                            return (
+                                <div className="newsCard">
+                                    <img src={newsStory.image}></img>
+                                    <Link>{newsStory.title}</Link>
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
                 <Footer />
             </div>

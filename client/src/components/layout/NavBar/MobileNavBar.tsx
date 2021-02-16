@@ -27,10 +27,10 @@ const MobileNavBar = () => {
             </div>
             <div className={menuState + "Menu menu"}>
                 <ul>
-                <li><Link>Etusivu</Link></li>
-                <li><Link>Uutiset</Link></li>
-                <li><Link>Säännöt</Link></li>
-                <li><Link>Aloituksia</Link></li>
+                <li><Link to="/">Etusivu</Link></li>
+                <li><Link to="/uutiset">Uutiset</Link></li>
+                <li><Link to="/saannot">Säännöt</Link></li>
+                <li><Link to="/aloituksia">Aloituksia</Link></li>
                 <li><Link>Kerhotoiminta</Link></li>
                 <li><Link>Yhteystiedot</Link></li>
                 </ul>

@@ -1,0 +1,42 @@
+@import "../../styles/variables.scss";
+
+.rulesMain {
+  background: linear-gradient(rgba($mainGreen, 0.1), rgba($mainGreen, 0.9)),
+    url("./taustakuva-eyasu-etsub-saG2cl1LD0I-unsplash.jpg");
+
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.rulesContent {
+  width: calc(min(1000px, 75%));
+  text-align: start;
+
+  h1 {
+    margin: 50px 0;
+  }
+
+  p {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .aloitusLauta {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    img {
+      width: calc(max(33%, 125px));
+    }
+
+    p {
+      margin-left: 10px;
+    }
+  }
+
+  h3 {
+    margin: 50px 0;
+  }
+}
