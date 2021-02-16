@@ -1,0 +1,36 @@
+@import "../../styles/variables.scss";
+
+.newsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.newsCard {
+  margin: 15px 0;
+  width: 75%;
+  background-color: rgba($mainBrown, 0.6);
+  padding: 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: baseline;
+
+  img {
+    height: 90px;
+  }
+
+  a {
+    color: #abd0d4;
+    margin: 20px;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: $smallScreen) {
+  .newsCard {
+    flex-direction: column;
+  }
+}
