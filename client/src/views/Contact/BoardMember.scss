@@ -1,0 +1,31 @@
+@import "../../styles/variables";
+
+.cardContainer {
+  background-color: #043738;
+
+  margin: 20px 0;
+  width: calc(min(80vw, 400px));
+
+  border-radius: 10px;
+
+  .infoWrapper {
+    padding: 20px 20px;
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin: calc(min(20px, 5vw));
+      margin-bottom: 0;
+      word-wrap: break-word;
+    }
+  }
+}
+
+@media (min-width: $mediumScreen) {
+  .cardContainer:nth-child(odd) {
+    margin-right: 30px;
+  }
+}

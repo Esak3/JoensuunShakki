@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+
+.contactContent {
+  width: calc(min(1000px, 75%));
+
+  text-align: start;
+
+  margin-bottom: 50px;
+
+  h1 {
+    margin: 50px 0;
+  }
+
+  p,
+  h3 {
+    margin: 30px 0;
+  }
+
+  .mapTitle {
+    margin-bottom: 0;
+  }
+
+  img {
+    width: calc(min(100%, 830px));
+  }
+
+  .memberCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
