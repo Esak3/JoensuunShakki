@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/JoensuunShakki/static/css/main.50e4c580.chunk.css",
+    "main.js": "/JoensuunShakki/static/js/main.09f8a531.chunk.js",
+    "main.js.map": "/JoensuunShakki/static/js/main.09f8a531.chunk.js.map",
+    "runtime-main.js": "/JoensuunShakki/static/js/runtime-main.426b0b1a.js",
+    "runtime-main.js.map": "/JoensuunShakki/static/js/runtime-main.426b0b1a.js.map",
+    "static/js/2.293ff6a5.chunk.js": "/JoensuunShakki/static/js/2.293ff6a5.chunk.js",
+    "static/js/2.293ff6a5.chunk.js.map": "/JoensuunShakki/static/js/2.293ff6a5.chunk.js.map",
+    "static/js/3.d309fcec.chunk.js": "/JoensuunShakki/static/js/3.d309fcec.chunk.js",
+    "static/js/3.d309fcec.chunk.js.map": "/JoensuunShakki/static/js/3.d309fcec.chunk.js.map",
+    "index.html": "/JoensuunShakki/index.html",
+    "static/css/main.50e4c580.chunk.css.map": "/JoensuunShakki/static/css/main.50e4c580.chunk.css.map",
+    "static/js/2.293ff6a5.chunk.js.LICENSE.txt": "/JoensuunShakki/static/js/2.293ff6a5.chunk.js.LICENSE.txt",
+    "static/media/Hero.scss": "/JoensuunShakki/static/media/hero-jani-kaasinen-7VGzV09YnvA-unsplash.2de59f38.jpg",
+    "static/media/Rules.scss": "/JoensuunShakki/static/media/taustakuva-eyasu-etsub-saG2cl1LD0I-unsplash.a8dff61b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.426b0b1a.js",
+    "static/js/2.293ff6a5.chunk.js",
+    "static/css/main.50e4c580.chunk.css",
+    "static/js/main.09f8a531.chunk.js"
+  ]
+}
