@@ -1,5 +1,4 @@
 import React, { FunctionComponent, useState, useEffect } from 'react'
-import { Link } from "react-router-dom";
 import "./NavBar.scss";
 
 import MobileNavBar from "./MobileNavBar";

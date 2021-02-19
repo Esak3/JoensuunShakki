@@ -20,7 +20,7 @@ const NewsPage = () => {
                         {news.map((newsStory) => {
                             return (
                                 <div className="newsCard">
-                                    <img src={newsStory.image}></img>
+                                    <img src={newsStory.image} alt={newsStory.title}></img>
                                     <Link>{newsStory.title}</Link>
                                 </div>
                             );
